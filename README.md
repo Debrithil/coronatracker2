@@ -1,7 +1,8 @@
 <p align="center">
 <img src="https://i.imgur.com/sjkuJF2.png" alt="Logo" width="480" height="300">
 <text center>
-<br>>This tracker provides the number of patients diagnosed with the novel coronavirus, 
+<br>
+<br>This tracker provides the number of patients diagnosed with the novel coronavirus, 
 <br>the number of deceased patients and the number of recovered patients. 
 <br>The data are based on research by Johns Hopkins University (JHU) and the World Health 
 <br>Organization’s (WHO) Coronavirus Disease (COVID-2019) situation reports.</p>
