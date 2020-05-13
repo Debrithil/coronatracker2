@@ -15,7 +15,7 @@
 
 ## Usage
 * <b>DASHBOARD:</b> retrieves the total number of confirmed cases, deaths and recovered patients [globally].
-* <b>ALL CASES:</b> retrieves a list of all cases [by country] (possibility to search cases according to a spesific location).
+* <b>ALL CASES:</b> retrieves a list of all cases [by country] (possibility to search cases according to a specific location).
 * <b>INFO:</b> general information, situation update, instructions for citizens, FAQ and telephone counselling.
 * <b>SYMPTOMS:</b> symptoms can be saved and stored in a list. It is also possible to delete saved data from the list.
 
