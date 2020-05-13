@@ -1,8 +1,9 @@
-# C O V I D - 1 9  T R A C K E R
-
-This tracker provides the number of patients diagnosed with the novel coronavirus, the number 
-of deceased patients and the number of recovered patients. The data are based on research by Johns Hopkins University (JHU) 
-and the World Health Organization’s (WHO) Coronavirus Disease (COVID-2019) situation reports.
+<p align="center">
+  <img src="https://i.imgur.com/sjkuJF2.png" alt="Logo" width="480" height="300">
+<p>This tracker provides the number of patients diagnosed with the novel coronavirus, 
+the number of deceased patients and the number of recovered patients. The data are 
+based on research by Johns Hopkins University (JHU) and the World Health Organization’s
+(WHO) Coronavirus Disease (COVID-2019) situation reports.
 
 ### Build with
 * [React Native](https://reactnative.dev/)
