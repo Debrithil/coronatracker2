@@ -160,7 +160,6 @@ export default function Symptoms() {
           onPress={sendItem}
         />
       </View>
-      <View style={styles.container2}></View>
       <View style={styles.list}>
         <FlatList
           keyExtractor={keyExtractor}
@@ -174,16 +173,12 @@ export default function Symptoms() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 3,
-    backgroundColor: "#fff",
-  },
-  container2: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
+    backgroundColor: "#fff"
   },
   list: {
-    flex: 10,
+    flex: 1,
     backgroundColor: "#fff",
+    padding: 10
   },
 });
