@@ -62,7 +62,7 @@ export default function Home() {
           source={require("../assets/coronavirus2.jpg")}
         />
         <View style={{ flex: 1, alignItems: "center" }}>
-          <Text style={{ fontSize: 30, margin: 7 }}>All cases in Global:</Text>
+          <Text style={{ fontSize: 28, margin: 7 }}>Reported cases globally:</Text>
           <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
             {<Badge status="warning" />} New Confirmed: {newConfirmed}
           </Text>
