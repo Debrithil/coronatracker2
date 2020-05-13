@@ -18,7 +18,7 @@ and the World Health Organization’s (WHO) Coronavirus Disease (COVID-2019) sit
 
 ### Screenshots
 <p align="center">
-<img src="https://i.imgur.com/2RJq3dG.jpg" width="250" title="screenshot_1"> &nbsp; <img src="https://i.imgur.com/kqY0AA5.jpg" width="250" alt="screenshot_2">
+<img src="https://i.imgur.com/mmrIJKc.jpg" width="250" title="screenshot_1"> &nbsp; <img src="https://i.imgur.com/kqY0AA5.jpg" width="250" alt="screenshot_2">
 <br><img src="https://i.imgur.com/MX4Ip3H.jpg" width="250" title="screenshot_1"> &nbsp; <img src="https://i.imgur.com/hZ8eDys.jpg" width="250" alt="screenshot_2">
 
 ## License
