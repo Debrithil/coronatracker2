@@ -1,7 +1,7 @@
 # C O V I D - 1 9  T R A C K E R
 
-This tracker provides the number of confirmed cases and deaths from coronavirus in globally and by country.
-The data are based on research by Johns Hopkins University (JHU) 
+This tracker provides the number of confirmed cases and deaths from coronavirus 
+globally and by country. The data are based on research by Johns Hopkins University (JHU) 
 and the World Health Organization’s (WHO) Coronavirus Disease (COVID-2019) situation reports.
 
 ### Build with
@@ -11,7 +11,7 @@ and the World Health Organization’s (WHO) Coronavirus Disease (COVID-2019) sit
 * [COVID-19 API](https://covid19api.com/)
 
 ## Usage
-* <b>DASHBOARD:</b> retrieves the total number of confirmed cases, deaths and recovered [in globally].
+* <b>DASHBOARD:</b> retrieves the total number of confirmed cases, deaths and recovered [globally].
 * <b>ALL CASES:</b> retrieves a list of all cases [by country] (possibility to search cases according to a spesific location).
 * <b>INFO:</b> general information, situation update, instructions for citizens, FAQ and telephone counselling.
 * <b>SYMPTOMS:</b> the symptom and its details can be saved on the form. The stored data is returned to the list.
