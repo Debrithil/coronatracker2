@@ -7,13 +7,7 @@ export default function Info() {
   // creating cards components that display the text as cards
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "#fff",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <View style={styles.headercontainer}>
         <Header
           statusBarProps={{ barStyle: "light-content" }}
           barStyle="light-content"
@@ -24,24 +18,17 @@ export default function Info() {
             style: { color: "#fff" },
           }}
         />
-        <ScrollView style={{ marginBottom: 30 }}>
+        <ScrollView style={styles.scrollview}>
           <Card
             title="GENERAL INFORMATION"
             image={require("../assets/information.png")}
           >
-            <Text style={{ marginBottom: 10 }}>
+            <Text style={styles.cardtext}>
               Contracting coronavirus, symptoms, prevention and treatment.
             </Text>
             <Button
               title=" READ MORE"
-              buttonStyle={{
-                backgroundColor: "#498A97",
-                borderRadius: 23,
-                marginLeft: 20,
-                marginRight: 20,
-                marginTop: 10,
-                marginBottom: 10,
-              }}
+              buttonStyle={styles.button}
               onPress={() =>
                 Linking.openURL(
                   "https://thl.fi/en/web/infectious-diseases/what-s-new/coronavirus-covid-19-latest-updates/coronavirus-covid-19"
@@ -53,20 +40,13 @@ export default function Info() {
             title="UP-TO-DATE INFORMATION"
             image={require("../assets/situation.png")}
           >
-            <Text style={{ marginBottom: 10 }}>
+            <Text style={styles.cardtext}>
               Up-to-date information about coronavirus in Finland and around the
               world.
             </Text>
             <Button
               title=" READ MORE"
-              buttonStyle={{
-                backgroundColor: "#498A97",
-                borderRadius: 23,
-                marginLeft: 20,
-                marginRight: 20,
-                marginTop: 10,
-                marginBottom: 10,
-              }}
+              buttonStyle={styles.button}
               onPress={() =>
                 Linking.openURL(
                   "https://thl.fi/en/web/infectious-diseases/what-s-new/coronavirus-covid-19-latest-updates/situation-update-on-coronavirus"
@@ -78,20 +58,13 @@ export default function Info() {
             title="INSTRUCTIONS"
             image={require("../assets/instructions.png")}
           >
-            <Text style={{ marginBottom: 10 }}>
+            <Text style={styles.cardtext}>
               How can I prevent infections? What should I do if I suspect an
               infection, if I get sick or if my family member gets sick?
             </Text>
             <Button
               title=" READ MORE"
-              buttonStyle={{
-                backgroundColor: "#498A97",
-                borderRadius: 23,
-                marginLeft: 20,
-                marginRight: 20,
-                marginTop: 10,
-                marginBottom: 10,
-              }}
+              buttonStyle={styles.button}
               onPress={() =>
                 Linking.openURL(
                   "https://thl.fi/en/web/infectious-diseases/what-s-new/coronavirus-covid-19-latest-updates/instructions-for-citizens-on-coronavirus"
@@ -100,19 +73,12 @@ export default function Info() {
             />
           </Card>
           <Card title="FAQ" image={require("../assets/faq.png")}>
-            <Text style={{ marginBottom: 10 }}>
+            <Text style={styles.cardtext}>
               Questions and answers about the novel coronavirus.
             </Text>
             <Button
               title=" READ MORE"
-              buttonStyle={{
-                backgroundColor: "#498A97",
-                borderRadius: 23,
-                marginLeft: 20,
-                marginRight: 20,
-                marginTop: 10,
-                marginBottom: 10,
-              }}
+              buttonStyle={styles.button}
               onPress={() =>
                 Linking.openURL(
                   "https://thl.fi/en/web/infectious-diseases/what-s-new/coronavirus-covid-19-latest-updates/frequently-asked-questions-about-coronavirus-covid-19-"
@@ -124,21 +90,14 @@ export default function Info() {
             title="TELEPHONE COUNSELLING"
             image={require("../assets/telephone.png")}
           >
-            <Text style={{ marginBottom: 10 }}>
+            <Text style={styles.cardtext}>
               The Government's joint telephone helpline is open on weekdays at
               8–21 and on Saturdays at 9–15. Calls to the helpline are subject
               to a regular local network or mobile phone charge.
             </Text>
             <Button
               title=" READ MORE"
-              buttonStyle={{
-                backgroundColor: "#498A97",
-                borderRadius: 23,
-                marginLeft: 20,
-                marginRight: 20,
-                marginTop: 10,
-                marginBottom: 10,
-              }}
+              buttonStyle={styles.button}
               onPress={() =>
                 Linking.openURL(
                   "https://valtioneuvosto.fi/en/information-on-coronavirus/telephone-and-chat"
@@ -146,7 +105,7 @@ export default function Info() {
               }
             />
           </Card>
-          <Text style={{ margin: 20 }}>
+          <Text style={styles.bottomtext}>
             © THL 2020 — FINNISH INSTITUTE FOR HEALTH AND WELFARE, PO BOX 30,
             FI-00271 HELSINKI
           </Text>
@@ -165,5 +124,27 @@ const styles = StyleSheet.create({
     fontSize: 34,
     textAlign: "center",
     backgroundColor: "#fff",
+  },
+  headercontainer: {
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  scrollview: {
+    marginBottom: 30,
+  },
+  button: {
+    backgroundColor: "#498A97",
+    borderRadius: 23,
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  cardtext: {
+    marginBottom: 10,
+  },
+  bottomtext: {
+    margin: 20,
   },
 });

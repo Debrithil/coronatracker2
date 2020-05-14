@@ -38,13 +38,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "#fff",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <View style={styles.headercontainer}>
         <Header
           statusBarProps={{ barStyle: "light-content" }}
           barStyle="light-content"
@@ -56,29 +50,29 @@ export default function Home() {
           }}
         />
       </View>
-      <View style={{ flex: 1 }}>
+      <View style={styles.container2}>
         <Image
           style={{ width: 400, height: 200 }}
           source={require("../assets/coronavirus2.jpg")}
         />
-        <View style={{ flex: 1, alignItems: "center" }}>
-          <Text style={{ fontSize: 28, margin: 7 }}>Reported cases globally:</Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+        <View style={styles.list}>
+          <Text style={styles.globally}>Reported cases globally:</Text>
+          <Text style={styles.confirmed}>
             {<Badge status="warning" />} New Confirmed: {newConfirmed}
           </Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+          <Text style={styles.totalconfirmed}>
             {<Badge status="warning" />} Total Confirmed: {totalConfirmed}
           </Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+          <Text style={styles.newdeaths}>
             {<Badge status="error" />} New Deaths: {newDeaths}
           </Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+          <Text style={styles.totaldeaths}>
             {<Badge status="error" />} Total Deaths: {totalDeaths}
           </Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+          <Text style={styles.newrecovered}>
             {<Badge status="success" />} New Recovered: {newRecovered}
           </Text>
-          <Text style={{ fontSize: 19, margin: 4, padding: 7 }}>
+          <Text style={styles.totalrecovered}>
             {<Badge status="success" />} Total Recovered: {totalRecovered}
           </Text>
           <Text>based on research by Johns Hopkins University</Text>
@@ -94,5 +88,51 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  container2: {
+    flex: 1,
+  },
+  headercontainer: {
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  list: {
+    flex: 1,
+    alignItems: "center",
+  },
+  globally: {
+    fontSize: 28,
+    margin: 7,
+  },
+  confirmed: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
+  },
+  totalconfirmed: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
+  },
+  newdeaths: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
+  },
+  totaldeaths: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
+  },
+  newrecovered: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
+  },
+  totalrecovered: {
+    fontSize: 19,
+    margin: 4,
+    padding: 7,
   },
 });

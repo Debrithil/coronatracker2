@@ -50,27 +50,12 @@ export default function Cases() {
 
   // list separator
   const listSeparator = () => {
-    return (
-      <View
-        style={{
-          height: 1,
-          width: "80%",
-          backgroundColor: "#CED0CE",
-          marginLeft: "10%",
-        }}
-      />
-    );
+    return <View style={styles.listseparator} />;
   };
 
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "#fff",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <View style={styles.headercontainer}>
         <Header
           statusBarProps={{ barStyle: "light-content" }}
           barStyle="light-content"
@@ -101,24 +86,24 @@ export default function Cases() {
         data={filteredCountries}
         renderItem={({ item }) => (
           <View style={styles.flatlist}>
-            <Text style={{ fontSize: 22, padding: 7 }}> {item.Country}</Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.country}> {item.Country}</Text>
+            <Text style={styles.newconfirmed}>
               {<Badge status="warning" />} New Confirmed: {item.NewConfirmed}
             </Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.totalconfirmed}>
               {<Badge status="warning" />} Total Confirmed:{" "}
               {item.TotalConfirmed}
             </Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.newdeaths}>
               {<Badge status="error" />} New Deaths: {item.NewDeaths}
             </Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.totaldeaths}>
               {<Badge status="error" />} Total Deaths: {item.TotalDeaths}
             </Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.newrecovered}>
               {<Badge status="success" />} New Recovered: {item.NewRecovered}
             </Text>
-            <Text style={{ fontSize: 15, padding: 7 }}>
+            <Text style={styles.totalrecovered}>
               {<Badge status="success" />} Total Recovered:{" "}
               {item.TotalRecovered}
             </Text>
@@ -141,5 +126,44 @@ const styles = StyleSheet.create({
     marginBottom: 3,
     marginTop: 3,
     padding: 10,
+  },
+  listseparator: {
+    height: 1,
+    width: "80%",
+    backgroundColor: "#CED0CE",
+    marginLeft: "10%",
+  },
+  headercontainer: {
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  country: {
+    fontSize: 22,
+    padding: 7,
+  },
+  newconfirmed: {
+    fontSize: 15,
+    padding: 7,
+  },
+  totalconfirmed: {
+    fontSize: 15,
+    padding: 7,
+  },
+  newdeaths: {
+    fontSize: 15,
+    padding: 7,
+  },
+  totaldeaths: {
+    fontSize: 15,
+    padding: 7,
+  },
+  newrecovered: {
+    fontSize: 15,
+    padding: 7,
+  },
+  totalrecovered: {
+    fontSize: 15,
+    padding: 7,
   },
 });

@@ -93,13 +93,7 @@ export default function Symptoms() {
 
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "#fff",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <View style={styles.headercontainer}>
         <Header
           statusBarProps={{ barStyle: "light-content" }}
           barStyle="light-content"
@@ -111,7 +105,7 @@ export default function Symptoms() {
           }}
         />
       </View>
-      <View style={{ margin: 10, padding: 7 }}>
+      <View style={styles.input}>
         <Input
           placeholder="type the symptom here.."
           label="SYMPTOM"
@@ -125,38 +119,16 @@ export default function Symptoms() {
           value={details}
         />
       </View>
-      <View style={{ flexDirection: "row", justifyContent: "center" }}>
+      <View style={styles.buttoncontainer}>
         <Button
           title="SAVE TO LIST"
-          buttonStyle={{
-            backgroundColor: "#498A97",
-            borderRadius: 10,
-            marginLeft: 5,
-            marginRight: 3,
-            marginTop: 10,
-          }}
+          buttonStyle={styles.button}
           onPress={saveItem}
         />
-        <Button
-          title="CLEAR"
-          buttonStyle={{
-            backgroundColor: "#498A97",
-            borderRadius: 10,
-            marginLeft: 5,
-            marginRight: 3,
-            marginTop: 10,
-          }}
-          onPress={clearText}
-        />
+        <Button title="CLEAR" buttonStyle={styles.button} onPress={clearText} />
         <Button
           title="SEND TO THL"
-          buttonStyle={{
-            backgroundColor: "#498A97",
-            borderRadius: 10,
-            marginLeft: 5,
-            marginRight: 3,
-            marginTop: 10,
-          }}
+          buttonStyle={styles.button}
           onPress={sendItem}
         />
       </View>
@@ -174,11 +146,31 @@ export default function Symptoms() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+  },
+  headercontainer: {
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  input: {
+    margin: 10,
+    padding: 7,
+  },
+  buttoncontainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  button: {
+    backgroundColor: "#498A97",
+    borderRadius: 10,
+    marginLeft: 5,
+    marginRight: 3,
+    marginTop: 10,
   },
   list: {
     flex: 1,
     backgroundColor: "#fff",
-    padding: 10
+    padding: 10,
   },
 });
